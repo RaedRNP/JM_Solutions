@@ -2,12 +2,21 @@
 ---
 
 <header class="absolute z-10 text-white flex w-full h-24 justify-between items-center">
-    <a href="#" class="px-3 mx-6 font-extrabold text-3xl">JM</a>
+    <a id="home" href="/" class="px-3 mx-6 font-extrabold text-3xl">JM</a>
     <nav>
         <ul class="px-3 flex text-lg">
-            <a href="#" class="mx-6 font-bold text-[#2db2fd] hover:underline">Planes</a>
-            <a href="#" class="mx-6 font-bold text-[#2db2fd] hover:underline">Atencion al Cliente</a>
-            <a href="#" class="mx-6 font-extrabold hover:underline">Portal de Pago</a>
+            <a id="planes" href="/planes" class="mx-6 font-bold text-[#2db2fd] hover:underline">Planes</a>
+            <a id="atencion-cliente" href="/atencion-cliente" class="mx-6 font-bold text-[#2db2fd] hover:underline">Atencion al Cliente</a>
+            <a id="portal-pago" href="/portal-pago" class="mx-6 font-extrabold hover:underline">Portal de Pago</a>
         </ul>
     </nav>
 </header>
+
+<script>
+    if (location.pathname === '/planes' 
+    || location.pathname === '/atencion-cliente' 
+    || location.pathname === '/portal-pago') {
+        document.getElementById("portal-pago").classList.add("text-black");
+        document.getElementById("home").classList.add("text-black");
+    }
+</script>
