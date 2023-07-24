@@ -1,10 +1,17 @@
 ---
 import Layout from "../layouts/Layout.astro";
+import planes from "../images/planes.png"
+import socialPhoto from "/pexels-oladimeji-ajegbile-3314294.jpg"
 ---
 
 <Layout title="Planes">
-    <main id="planes">
-
+    <main id="planes" class="flex items-center justify-evenly">
+        <section class="w-1/2">
+            <img src={planes}>
+        </section>
+        <section class="w-1/3">
+            <img src={socialPhoto}>
+        </section>
     </main>
 </Layout>
 
