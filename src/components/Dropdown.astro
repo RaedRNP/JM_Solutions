@@ -6,9 +6,9 @@
     <nav class="sm:hidden block">
         <span></span>
         <ul>
-            <a id="planes" href="/planes" class="mx-6 font-bold text-[#2db2fd] hover:underline">Planes</a>
-            <a id="atencion-cliente" href="/atencion-cliente" class="mx-6 font-bold text-[#2db2fd] hover:underline">Atencion al Cliente</a>
-            <a id="portal-pago" href="/login" class="mx-6 font-extrabold hover:underline">Portal de Pago</a>
+            <a id="planes-m" href="/planes" class="mx-6 font-bold text-[#2db2fd] hover:underline">Planes</a>
+            <a id="atencion-cliente-m" href="/atencion-cliente" class="mx-6 font-bold text-[#2db2fd] hover:underline">Atencion al Cliente</a>
+            <a id="portal-pago-m" href="/login" class="mx-6 font-extrabold hover:underline">Portal de Pago</a>
         </ul>
     </nav>
     <!-- this is when desktop *Done* -->
@@ -20,3 +20,13 @@
         </ul>
     </nav>
 </div>
+
+<script>
+    if (location.pathname === '/planes' 
+    || location.pathname === '/atencion-cliente' 
+    || location.pathname === '/portal-pago'
+    || location.pathname === '/conocenos') {
+        document.getElementById("portal-pago").classList.add("text-black");
+        document.getElementById("home").classList.add("text-black");
+    }
+</script>
