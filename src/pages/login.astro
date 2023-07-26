@@ -3,11 +3,18 @@ import Layout from '../layouts/Layout.astro';
 ---
 
 <Layout title='Login'>
-    <div class="flex justify-center">
-        <div class="absolute h-5/6 w-5/6 bg-blue-500">
+    <main id="popup" class="h-screen w-full grid place-items-center bg-opacity-80 bg-black">
+        <div class="h-4/6 w-4/6 bg-blue-500 rounded-md shadow-lg p-10">
             <h1>
                 hello world
             </h1>
+            <form action="GET">
+                <label for="user">User</label>
+                <input type="text" id="user">
+                <label for="password">Password</label>
+                <input type="password" id="password">
+            </form>
+            <input id="press" type="submit">
         </div>
-    </div>
+    </main>
 </Layout>

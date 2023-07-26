@@ -1,15 +1,17 @@
 ---
+import Dropdown from "./Dropdown.astro"
 ---
 
 <header class="absolute z-10 text-white flex w-full h-24 justify-between items-center">
     <a id="home" href="/" class="px-3 mx-6 font-extrabold text-3xl">JM</a>
-    <nav>
+    <!-- <nav>
         <ul class="px-3 flex text-lg">
             <a id="planes" href="/planes" class="mx-6 font-bold text-[#2db2fd] hover:underline">Planes</a>
             <a id="atencion-cliente" href="/atencion-cliente" class="mx-6 font-bold text-[#2db2fd] hover:underline">Atencion al Cliente</a>
-            <a id="portal-pago" href="/portal-pago" class="mx-6 font-extrabold hover:underline">Portal de Pago</a>
+            <a id="portal-pago" href="/login" class="mx-6 font-extrabold hover:underline">Portal de Pago</a>
         </ul>
-    </nav>
+    </nav> -->
+    <Dropdown />
 </header>
 
 <script>
