@@ -1,15 +1,11 @@
 ---
 import Layout from "../layouts/Layout.astro"
-import atencion from "../images/pexels-anna-shvets-4226140.jpg"
+import atencion from "../images/help.jpg"
 ---
 
 <Layout title="Atencion al Cliente">
-    <main id="atencion" class="flex items-center justify-evenly flex-col-reverse sm:flex-wrap">
-        <div class="info w-1/2 sm:flex-grow-1">
-            <img src={atencion}>
-            <h2 class="text-center mt-3 mb-3 font-bold text-xl">Dejanos tu comentario</h2>
-        </div>
-        <div class="form w-1/2 sm:flex-grow-1">
+    <main id="atencion" class="flex items-center justify-around flex-col-reverse sm:flex-wrap">
+        <div class="form w-1/2 sm:flex-grow-1 p-10">
             <div class="form-element my-2">
                 <label class="text-sm " for="full-name">Nombre completo</label>
                 <input type="text" id="full-name" placeholder="Elon Musk">
@@ -35,6 +31,10 @@ import atencion from "../images/pexels-anna-shvets-4226140.jpg"
             <div class="form-element my-2">
                 <button>Enviar</button>
             </div>
+        </div>
+        <div class="w-1/4 sm:flex-grow-1 flex justify-center items-center">
+            <img class="rounded-md shadow-xl" src={atencion}>
+            <!-- <h2 class="text-center mt-3 mb-3 font-bold text-xl">Dejanos tu comentario</h2> -->
         </div>
     </main>
 </Layout>
@@ -67,12 +67,12 @@ import atencion from "../images/pexels-anna-shvets-4226140.jpg"
         outline: none;
         font-size: 0.875rem;
         line-height: 1.25rem;
-        background: #2db2fd;
+        background: #0002f8;
         color: #f5f5f5;
         border-radius: 5px;
         cursor: pointer;
     }
     .form-element button:hover {
-        background: #238cc9;
+        background: #2db2fd;
     }
 </style>
