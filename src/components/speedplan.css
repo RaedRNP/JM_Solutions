@@ -1,7 +1,7 @@
 .circular-progress {
     position: relative;
-    width: 13rem;
-    height: 13rem;
+    width: 15rem;
+    height: 15rem;
     background: #2db2fd;
     border-radius: 50%;
     display: grid;
