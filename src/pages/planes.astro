@@ -1,24 +1,29 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import planes from "../images/planes.png"
+import Card from "../components/Card.astro"
 import socialPhoto from "../images/planes.jpeg"
+import SpeedPlanCard from "../components/SpeedPlanCard.astro";
 ---
 
 <Layout title="Planes">
-    <main id="planes" class="flex items-center justify-evenly flex-col-reverse sm:flex-wrap">
-        <section class="w-1/2 sm:flex-grow-1">
-            <img src={planes}>
+    <main id="planes" class="flex items-center justify-around flex-col sm:flex-wrap">
+        <section class="h-screen w-full flex items-center justify-around sm:flex-row flex-col-reverse sm:flex-wrap">
+            <!-- <div class="w-1/2 sm:flex-grow-1 p-10">
+                <img src={planes}>
+            </div> -->
+            <SpeedPlanCard speed={200} price={20}/>
+            <Card img={socialPhoto} title="Hello" body="Hello World" />
         </section>
-        <section class="w-1/4 sm:flex-grow-1">
-            <img src={socialPhoto} class="rounded-md shadow-xl">
+        <section class="w-full h-screen flex justify-center items-center">
+            <SpeedPlanCard speed={300} price={30}/>
         </section>
     </main>
 </Layout>
 
 <style>
-    main {
+    #planes {
         height: 100vh;
-        width: 100vw;
+        width: 100%;
         background-image: url("../images/bg-all.jpg");
         background-position: center;
         background-repeat: no-repeat;

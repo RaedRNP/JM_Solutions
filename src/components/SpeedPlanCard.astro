@@ -1,0 +1,23 @@
+---
+import SpeedPlan from "./SpeedPlan.jsx";
+const { speed, price } = Astro.props
+---
+
+<SpeedPlan speed={speed} client:load >
+    <div class="value-container text-[#2db2fd]">{speed}MB</div>
+    <div class="price-container text-[#2db2fd]">{price}$</div>
+</SpeedPlan>
+
+<style>
+    .value-container {
+        position: relative;
+        font-size: xx-large;
+        font-weight: 700;
+        align-self: center;
+    }
+    .price-container {
+        position: relative;
+        font-size: large;
+        font-weight: 500;
+    }
+</style>

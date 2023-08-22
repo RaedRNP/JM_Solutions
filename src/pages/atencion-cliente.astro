@@ -1,5 +1,6 @@
 ---
 import Layout from "../layouts/Layout.astro"
+import Card from "../components/Card.astro"
 import atencion from "../images/help.jpg"
 ---
 
@@ -32,21 +33,18 @@ import atencion from "../images/help.jpg"
                 <button>Enviar</button>
             </div>
         </div>
-        <div class="w-1/4 sm:flex-grow-1 flex justify-center items-center">
-            <img class="rounded-md shadow-xl" src={atencion}>
-            <!-- <h2 class="text-center mt-3 mb-3 font-bold text-xl">Dejanos tu comentario</h2> -->
-        </div>
+        <Card img={atencion} title="Hello" body="Hello world" />
     </main>
 </Layout>
 
 <style>
     #atencion {
+        height: 100vh;
+        width: 100%;
         background-image: url('/src/images/bg-all.jpg');
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
-        height: 100vh;
-        width: 100%;
     }
     input[type="email"],
     input[type="text"],
