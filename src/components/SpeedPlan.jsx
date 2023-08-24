@@ -7,11 +7,11 @@ export default function SpeedPlan({ children, speed }) {
 
   return (
     <div
-      className="circular-progress mx-28"
+      className="circular-progress"
       style={{
         background: `conic-gradient(
-            #0002f8 ${progressEndValue * 3}deg,
-            #2db2fd ${(progressEndValue * 3.6)+10}deg
+            #3da9fc ${progressEndValue * 3}deg,
+            #094067 ${progressEndValue * 3.6 + 30}deg
         )`,
       }}
     >

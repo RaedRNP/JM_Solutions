@@ -4,8 +4,8 @@ const { img, title, body } = Astro.props
 
 <div class="w-80 sm:flex-grow-1 flex justify-center items-center">
     <img class="rounded-md shadow-xl" src={img}>
-    <div class="absolute w-72 top-1/4 text-center">
+    <div class="absolute w-72 text-center">
         <h2 class="mb-20 font-bold text-2xl text-white">{title}</h2>
-        <p class="text-base text-white text-center">{body}</p>
+        <p class="text-base text-white">{body}</p>
     </div>
 </div>

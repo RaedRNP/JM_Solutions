@@ -4,8 +4,8 @@ const { speed, price } = Astro.props
 ---
 
 <SpeedPlan speed={speed} client:load >
-    <div class="value-container text-[#0002f8]/75">{speed}MB</div>
-    <div class="price-container text-[#2db2fd]">{price}$</div>
+    <div class="value-container text-black">{speed}MB</div>
+    <div class="price-container text-gray-900">{price}$</div>
 </SpeedPlan>
 
 <style>

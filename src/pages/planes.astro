@@ -1,32 +1,66 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import Card from "../components/Card.astro"
-import socialPhoto from "../images/planes.jpeg"
+import Card from "../components/Card.astro";
+import socialPhoto from "../images/planes.jpeg";
 import SpeedPlanCard from "../components/SpeedPlanCard.astro";
+import spacechip from "../images/icons8-spaceship-100.png";
+import speedTag from "../images/icons8-speed-100.png";
+import Button from "../components/Button.astro";
+import { IoArrowDownCircleOutline } from "react-icons/io5";
 ---
 
 <Layout title="Planes">
-    <main id="planes" class="flex items-center justify-around flex-col sm:flex-wrap">
-        <section class="h-screen w-full flex items-center justify-around sm:flex-row flex-col-reverse sm:flex-wrap">
-            <!-- <div class="w-1/2 sm:flex-grow-1 p-10">
-                <img src={planes}>
-            </div> -->
-            <SpeedPlanCard speed={200} price={20}/>
-            <Card img={socialPhoto} title="Hello" body="Hello World" />
-        </section>
-        <section class="w-full h-screen flex justify-center items-center">
-            <SpeedPlanCard speed={300} price={30}/>
-        </section>
-    </main>
+  <section
+    id="main-plans"
+    class="h-screen w-full flex items-center justify-around flex-col sm:flex-wrap bg-[#fffffe]"
+  >
+    <div class="grid place-items-center content-center">
+      <h1
+        class="font-bold text-5xl leading-[52px] uppercase w-2/3 text-center tracking-tight mb-12 text-[#094067]"
+      >
+        Elige el plan que mejor se adapte a ti
+      </h1>
+      <p class="w-2/3 text-center leading-6 text-lg text-[#5f6c7b]">
+        En nuestro servicio encontraras precios totalmente adecuados a lo que
+        necesites, con la velocidad necesaria para satisfacer tu experiencia.
+      </p>
+      <a
+        id="btn"
+        href="#plan-1"
+        class="mt-10 text-6xl text-[#3da9fc] transition-transform hover:-translate-y-1"
+        ><IoArrowDownCircleOutline /></a
+      >
+    </div>
+  </section>
+  <section
+    id="plan-1"
+    class="flex items-center justify-around flex-col sm:flex-wrap"
+  >
+    <div
+      class="h-screen w-full flex items-center justify-evenly sm:flex-row flex-col-reverse sm:flex-wrap"
+    >
+      <SpeedPlanCard speed={200} price={20} />
+      <Card img={socialPhoto} title="Hello" body="Hello World" />
+    </div>
+  </section>
+  <section id="plan-2" class="w-full h-screen flex justify-center items-center">
+    <SpeedPlanCard speed={300} price={30} />
+  </section>
+  <section id="plan-3" class="w-full h-screen flex justify-center items-center">
+    <SpeedPlanCard speed={600} price={40} />
+  </section>
 </Layout>
 
 <style>
-    #planes {
-        height: 100vh;
-        width: 100%;
-        background-image: url("../images/bg-all.jpg");
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
+  body {
+    background-color: #d8eefe;
+  }
+  #main-plans {
+    height: 100vh;
+    width: 100%;
+    background-image: url("../images/plans.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
 </style>
