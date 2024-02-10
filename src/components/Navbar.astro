@@ -1,8 +1,17 @@
 ---
-import Dropdown from "./Dropdown.astro"
+import Dropdown from "./Dropdown.astro";
+import Logo from "../images/Azul_Tecnología_y_Videojuegos_Logotipo.svg";
 ---
 
 <header class="absolute z-10 text-white flex w-full h-24 justify-between items-center">
-    <a id="home" href="/" class="px-3 mx-6 font-extrabold text-3xl">JM</a>
+    <a id="home" href="/" class="px-3 mx-6 font-extrabold text-3xl">
+        <img class="logo" src={Logo} alt="Logo"/>
+    </a>
     <Dropdown />
 </header>
+
+<style>
+    .logo {
+        width: 15vw;
+    }
+</style>

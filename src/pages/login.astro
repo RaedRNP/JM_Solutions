@@ -4,15 +4,15 @@ import Layout from '../layouts/Layout.astro';
 
 <Layout title='Login'>
     <main id="sign" class="h-screen w-full grid place-items-center bg-opacity-80 bg-black">
-        <div class="flex items-center justify-center md:h-4/6 h-screen md:w-2/5 w-full sm:bg-[#f5f5f5] md:rounded-2xl md:shadow-lg py-5 px-8">
+        <div class="flex items-center justify-center md:h-4/6 h-screen md:w-2/5 w-full sm:bg-[#fffffe] md:rounded-2xl md:shadow-lg py-5 px-8">
             <div>
-                <h2 class="text-center mt-3 mb-5 font-bold text-xl sm:text-slate-950 text-white">Inicio de Sesion</h2>
+                <h2 class="text-center mt-3 mb-5 font-bold text-xl sm:text-slate-950 text-[#fffffe]">Inicio de Sesion</h2>
                 <div class="form-element my-4">
-                    <label class="text-sm sm:text-slate-950 text-white" for="email">Email</label>
+                    <label class="text-sm sm:text-slate-950 text-[#FFFFFE]" for="email">Email</label>
                     <input type="email" id="email" placeholder="correo@mail.com">
                 </div>
                 <div class="form-element my-4">
-                    <label class="text-sm sm:text-slate-950 text-white" for="password">Password</label>
+                    <label class="text-sm sm:text-slate-950 text-[#FFFFFE]" for="password">Password</label>
                     <input type="password" id="password" placeholder="Contraseña">
                 </div>
                 <div class="form-element my-4">
@@ -48,12 +48,15 @@ import Layout from '../layouts/Layout.astro';
         outline: none;
         font-size: 0.875rem;
         line-height: 1.25rem;
-        background: #0002f8;
-        color: #f5f5f5;
+        background: #3da9fc;
+        color: #fffffe;
         border-radius: 5px;
         cursor: pointer;
     }
     .form-element button:hover {
-        background: #2db2fd;
+        background: #094067;
+    }
+    .form-element button:active {
+        border: 2px solid #094067;
     }
 </style>

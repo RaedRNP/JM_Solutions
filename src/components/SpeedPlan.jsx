@@ -10,8 +10,8 @@ export default function SpeedPlan({ children, speed }) {
       className="circular-progress"
       style={{
         background: `conic-gradient(
-            #3da9fc ${progressEndValue * 3}deg,
-            #094067 ${progressEndValue * 3.6 + 30}deg
+            #00C4FF ${progressEndValue * 3}deg,
+            #fff ${progressEndValue * 3.6 + 30}deg
         )`,
       }}
     >

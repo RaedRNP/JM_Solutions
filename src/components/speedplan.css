@@ -2,7 +2,7 @@
     position: relative;
     width: 15rem;
     height: 15rem;
-    background: #094067;
+    background: #fff;
     border-radius: 50%;
     display: grid;
     place-items: center;
@@ -13,6 +13,7 @@
     position: absolute;
     width: 80%;
     height: 80%;
-    background-color: #fffffe;
+    background-color: #fff;
     border-radius: 50%;
+    box-shadow: inset 0px 0px 10px 0px #00c4ffd0;
 }
