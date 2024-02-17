@@ -2,11 +2,6 @@
 import Layout from "../layouts/Layout.astro";
 import Button from "../components/Button.astro";
 import videoGame from "../images/production_id_4115283(540p).mp4";
-import { IoArrowDownCircleOutline } from "react-icons/io5";
-import Card from "../components/Card.astro";
-import SpeedPlanCard from "../components/SpeedPlanCard.astro";
-
-
 ---
 
 <Layout title="Home Page">
@@ -14,9 +9,9 @@ import SpeedPlanCard from "../components/SpeedPlanCard.astro";
     <source src={videoGame} type="video/mp4" />
   </video>
   <main class="relative w-full h-screen flex items-center justify-center">
-    <div class="absolute w-2/3">
+    <div class="sm:absolute sm:w-2/3">
       <h1
-        class="fancy-text text-6xl w-full text-center font-normal text-[#00C4FF] uppercase leading-none mb-10"
+        class="fancy-text text-4xl sm:text-6xl w-full text-center font-normal text-[#00C4FF] uppercase leading-none mb-10"
       >
         ACORTANDO <span>DISTANCIAS</span>
       </h1>
@@ -50,15 +45,10 @@ import SpeedPlanCard from "../components/SpeedPlanCard.astro";
     object-fit: cover;
     z-index: -1;
   }
-  section {
-    min-height: 100vh;
-  }
-  #main-plans {
-    height: 100vh;
-    width: 100%;
-    background-image: url("../images/plans.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+
+  @media (max-width: 640px) {
+    #game-video {
+      display: none;
+    }
   }
 </style>

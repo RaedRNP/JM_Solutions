@@ -2,9 +2,9 @@
 const { title, body } = Astro.props
 ---
 
-<div class="w-96 h-1/2 rounded-xl sm:flex-grow-1 flex justify-center items-center">
+<div class="w-96 h-1/2 rounded-xl sm:flex-grow-1 flex justify-center items-center sm:p-0 p-5">
     <div class="grid place-items-center content-center w-96 text-center">
-        <h2 class=" font-bold text-2xl text-[#094067] mb-5">{title}</h2>
-        <p class="text-base text-[#5f6c7b]">{body}</p>
+        <h2 class=" font-bold text-xl sm:text-2xl text-[#094067] mb-5">{title}</h2>
+        <p class="text-xs sm:text-base text-[#5f6c7b] p-5">{body}</p>
     </div>
 </div>

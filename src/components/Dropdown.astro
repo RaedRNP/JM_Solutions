@@ -1,32 +1,38 @@
 ---
 ---
 
-<div>
-    <!-- this is when mobile -->
-    <nav class="sm:hidden block">
-        <span></span>
-        <ul>
-            <a id="planes-m" href="/planes" class="mx-6 font-bold text-[#00C4FF] hover:underline">Planes</a>
-            <a id="atencion-cliente-m" href="/atencion-cliente" class="mx-6 font-bold text-[#00C4FF] hover:underline">Atencion al Cliente</a>
-            <!-- <a id="portal-pago-m" href="/login" class="mx-6 font-extrabold hover:underline">Portal de Pago</a> -->
-        </ul>
-    </nav>
-    <!-- this is when desktop *Done* -->
-    <nav class="sm:block hidden">
-        <ul class="px-3 flex text-lg">
-            <a id="planes" href="/planes" class="mx-6 font-bold text-[#00C4FF] hover:underline">Planes</a>
-            <a id="atencion-cliente" href="/atencion-cliente" class="mx-6 font-bold text-[#00C4FF] hover:underline">Atencion al Cliente</a>
-            <!-- <a id="portal-pago" href="/login" class="mx-6 font-extrabold hover:underline">Portal de Pago</a> -->
-        </ul>
-    </nav>
-</div>
+<!-- this is when desktop *Done* -->
+<nav
+  class="hidden w-full sm:block sm:w-auto"
+>
+  <ul class="flex sm:flex-row flex-col sm:p-0 p-4 ">
+    <li>
+      <a
+        id="planes"
+        href="/planes"
+        class="mx-6 font-bold text-[#00C4FF] hover:underline block py-2 px-3">Planes</a
+      >
+    </li>
+    <li>
+      <a
+        id="atencion-cliente"
+        href="/atencion-cliente"
+        class="mx-6 font-bold text-[#00C4FF] hover:underline block py-2 px-3"
+        >Atencion al Cliente</a
+      >
+    </li>
+    <!-- <li><a id="portal-pago" href="/login" class="mx-6 font-extrabold hover:underline">Portal de Pago</a></li> -->
+  </ul>
+</nav>
 
 <script>
-    if (location.pathname === '/planes' 
-    || location.pathname === '/atencion-cliente' 
-    || location.pathname === '/portal-pago'
-    || location.pathname === '/conocenos') {
-        document.getElementById("portal-pago").classList.add("text-[#094067]");
-        document.getElementById("home").classList.add("text-[#094067]");
-    }
+  if (
+    location.pathname === "/planes" ||
+    location.pathname === "/atencion-cliente" ||
+    location.pathname === "/portal-pago" ||
+    location.pathname === "/conocenos"
+  ) {
+    document.getElementById("portal-pago").classList.add("text-[#094067]");
+    document.getElementById("home").classList.add("text-[#094067]");
+  }
 </script>
