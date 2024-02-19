@@ -2,7 +2,7 @@
 import Layout from "../layouts/Layout.astro";
 import Card from "../components/Card.astro";
 import SpeedPlanCard from "../components/SpeedPlanCard.astro";
-import { IoArrowDownCircleOutline } from "react-icons/io5";
+import DownArrow from "/down-arrow.png"
 
 let text_1 = `
 ¿Cansado de tener una conexión lenta e intermitente?
@@ -84,7 +84,7 @@ Todo esto por un precio competitivo: solo $40 al mes.
           id="btn"
           href="#plan-1"
           class="mt-10 text-6xl text-[#00C4FF] transition-transform hover:-translate-y-1"
-          ><IoArrowDownCircleOutline /></a
+          ><img src={DownArrow} alt="..." class="w-10" /></a
         >
       </div>
     </section>

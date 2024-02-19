@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { IoReorderThree, IoCloseSharp } from "react-icons/io5";
+import Menu from "/menu.png"
 
 export function Dropdowns() {
   const [isOpen, setIsOpen] = useState(false);
@@ -10,7 +10,7 @@ export function Dropdowns() {
         className="sm:hidden p-3 text-4xl flex justify-evenly items-center text-[#00C4FF] hover:text-[#e89429]"
         onClick={() => setIsOpen(!isOpen)}
       >
-        {!isOpen ? (<IoReorderThree />) : (<IoCloseSharp />)}
+       <img src={Menu} alt="..." class="w-4" />
         
       </button>
       {!isOpen ? (
